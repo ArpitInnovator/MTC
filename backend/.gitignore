@@ -1,0 +1,13 @@
+# Ignore ALL Python cache (in every folder)
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore virtual environments
+.venv/
+
+
+.env
+
+# Ignore logs
+*.log
