@@ -28,4 +28,6 @@ def add_customer(customer: CustomerCreate, db: Session = Depends(get_db)):
     db.refresh(user_db)
     
     return user_db
+
+
 Base.metadata.create_all(engine)

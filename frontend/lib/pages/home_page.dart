@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mtc/connect.dart';
 import 'package:mtc/theme/app_theme.dart';
 
 class HomePage extends StatefulWidget {
@@ -61,6 +62,7 @@ class _HomePageState extends State<HomePage> {
                     ),
                     onPressed: () {
                       if (formKey.currentState!.validate()) {
+                        Connect.addCustomer(name: nameController.text, phone: phoneController.text, address: addressController.text);
                         Navigator.pop(context);
                       }
                     },
